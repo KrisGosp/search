@@ -12,10 +12,18 @@ body {
   text-decoration: none;
 }
 
+/* Search */
 .search {
   height: 90vh;
 }
 .search_bar {
   width: 500px;
   background: #303134;
+}
+
+/* Advanced Search */
+.grid_container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
 }

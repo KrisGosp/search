@@ -16,14 +16,22 @@
     <div class="d-flex justify-content-end navbar">
       <a href="index.html">Google Search</a>
     </div>
-    <div class="d-flex align-items-center justify-content-center search">
-      <form action="https://www.google.com/search?tbm=isch&">
-        <input
-          type="text"
-          name="q"
-          class="rounded-pill d-block w-5 search_bar"
-        />
-        <input type="hidden" name="tbm" value="isch" />
+    <div class="d-flex justify-content-center">
+      <form action="https://www.google.com/search">
+        <div class="grid_container">
+          <label for="as_q">all these words:</label>
+          <input type="text" name="as_q" id="as_q" />
+
+          <label for="as_epq">this exact word or phrase:</label>
+          <input type="text" name="as_epq" id="as_epq" />
+
+          <label for="as_oq">any of these words:</label>
+          <input type="text" name="as_oq" id="as_oq" />
+
+          <label for="as_eq">none of these words:</label>
+          <input type="text" name="as_eq" id="as_eq" />
+          <!-- <input type="hidden" name="tbm" value="isch" /> -->
+        </div>
         <div class="d-flex justify-content-center mt-4">
           <input
             type="submit"
